@@ -28,7 +28,7 @@ for row in stat_table.find_all('tr'):
 print(len(stat_table))
 
 # Write all this information in a .txt file
-with open ('info.txt', 'w') as r:
+with open ('standings.txt', 'w') as r:
     for row in stat_table.find_all('tr'):
         for cell in row.find_all('td'):
             r.write(cell.text)
